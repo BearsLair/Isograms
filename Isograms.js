@@ -3,11 +3,10 @@
 //compare set to str with strict equals
 
 function isIsogram(str) {
-  console.log(str);
-  str.toLowerCase();
-  const uniqueChars = new Set(str);
+  const string = str.toLowerCase();
+  const uniqueChars = new Set(string);
   uniqueString = [...uniqueChars].join("");
-  if (str === uniqueString) {
+  if (string === uniqueString) {
     return true;
   } else {
     return false;
